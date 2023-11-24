@@ -18,10 +18,10 @@ import { CreateQuizDTO } from './dto/create-quiz.dto';
 export class QuizController {
   constructor(private readonly quizService: QuizService) {}
 
-  @Get('/')
-  getAllQuiz() {
-    return this.quizService.getAllQuiz();
-  }
+  // @Get('/')
+  // getAllQuiz() {
+  //   return this.quizService.getAllQuiz();
+  // }
 
   @Post('/create')
   @HttpCode(200)
